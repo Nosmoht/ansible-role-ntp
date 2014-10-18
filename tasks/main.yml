@@ -1,0 +1,5 @@
+---
+- name: Install NTP
+  yum: name={{ ntpd_package_name }} state=installed
+  notify:
+  - Start NTP

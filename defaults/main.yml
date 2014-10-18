@@ -1,0 +1,3 @@
+ntpd_package_name: ntp
+ntpd_service_name: ntpd
+ntpd_service_state: running
