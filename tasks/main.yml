@@ -1,5 +1,7 @@
 ---
 - name: Install NTP
-  yum: name={{ ntpd_package_name }} state=installed
+  yum: name={{ ntp_package_name }} state=installed
   notify:
   - Start NTP
+- name: Configure NTP service on boot
+  service: name={{ ntp_service_name }} enabled={{ ntp_service_enabled }}
