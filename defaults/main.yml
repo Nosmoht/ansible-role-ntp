@@ -1,3 +1,5 @@
-ntpd_package_name: ntp
-ntpd_service_name: ntpd
-ntpd_service_state: running
+---
+ntp_package_name: ntp
+ntp_service_name: ntpd
+ntp_service_state: running
+ntp_service_enabled: true
