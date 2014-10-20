@@ -1,12 +1,9 @@
 ---
 - name: Start NTP
-  service: name={{ ntpd_service_name }} state=started
-
+  service: name={{ ntp_service_name }} state=started
 - name: Stop NTP
-  service: name={{ ntpd_service_name }} state=stopped
-
+  service: name={{ ntp_service_name }} state=stopped
 - name: Restart NTP
-  service: name={{ ntpd_service_name }} state=restarted
-
+  service: name={{ ntp_service_name }} state=restarted
 - name: Reload NTP Configuration
-  service: name={{ ntpd_service_name }} state=reloaded
+  service: name={{ ntp_service_name }} state=reloaded
