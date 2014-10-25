@@ -1,8 +1,6 @@
 ---
 - name: Install NTP
   yum: name={{ ntp_package_name }} state=installed
-  when: ansible_os_family == "RedHat"
-  notify:
-  - Start NTP
-- name: Configure NTP service on boot
-  service: name={{ ntp_service_name }} enabled={{ ntp_service_enabled }}
+
+- name: Start NTP service and configure on boot startup
+  service: name={{ ntp_service_name }} state={{ ntp_service_state }} enabled={{ ntp_service_enabled }}
