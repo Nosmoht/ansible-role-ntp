@@ -1,0 +1,6 @@
+---
+- name: Ensure package
+  sudo: true
+  yum:
+    name: '{{ ntp_package_name }}'
+    state: '{{ ntp_package_state }}'
