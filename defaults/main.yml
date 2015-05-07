@@ -5,6 +5,7 @@ ntp_service_name: ntpd
 ntp_service_state: running
 ntp_service_enabled: true
 ntp_config_file: /etc/ntp.conf
+ntp_config_file_template: ntp.conf.j2
 ntp_drift_file: /var/lib/ntp/ntp.drift
 ntp_key_file: /etc/ntp/keys
 ntp_servers:
