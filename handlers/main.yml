@@ -1,6 +1,12 @@
 ---
 - name: Restart NTP
-  service: name={{ ntp_service_name }} state=restarted
+  sudo: true
+  service:
+    name: '{{ ntp_service_name }}'
+    state: restarted
 
-- name: Reload NTP Configuration
-  service: name={{ ntp_service_name }} state=reloaded
+- name: Reload NTP
+  sudo: true
+  service:
+    name: '{{ ntp_service_name }}'
+    state: reloaded
