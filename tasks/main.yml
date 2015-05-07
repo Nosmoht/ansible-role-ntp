@@ -1,6 +1,9 @@
 ---
-- name: Install NTP
-  yum: name={{ ntp_package_name }} state=installed
+- include: install.yml
+  tags: ntp_install
 
-- name: Start NTP service and configure on boot startup
-  service: name={{ ntp_service_name }} state={{ ntp_service_state }} enabled={{ ntp_service_enabled }}
+- include: config.yml
+  tags: ntp_config
+
+- include: service.yml
+  tags: ntp_service
