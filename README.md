@@ -35,9 +35,13 @@ Ansible > 1.2
   - role: ntp
 ```
 
+# T24 ntp endpoint
+
+please refer to https://atlassian.office.tipp24.de/confluence/display/TP/Relevant+Service+Endpoint
+
 # License
 
-BSD
+Apache 2.0
 
 # Author information
 [Thomas Krahn]
