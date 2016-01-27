@@ -1,6 +1,5 @@
 ---
 - name: Ensure configuration
-  sudo: true
   template:
     src: '{{ ntp_config_file_template }}'
     dest: '{{ ntp_config_file }}'
