@@ -12,7 +12,7 @@ Ansible > 1.2
 |:-----|:-----|:-----|
 | ntp_package_name | Package name | ntp |
 | ntp_package_state | Package state | installed |
-| ntp_service_name | Service name | ntpd |
+| ntp_service_name | Service name | _depends on ansible_os_family_ |
 | ntp_service_state | service state | running |
 | ntp_service_enabled | Boolean defining if NTP has to be started on system boot | true |
 | ntp_config_file | File name of ntp.conf | /etc/ntp.conf |
@@ -34,10 +34,6 @@ Ansible > 1.2
   roles:
   - role: ntp
 ```
-
-# T24 ntp endpoint
-
-please refer to https://atlassian.office.tipp24.de/confluence/display/TP/Relevant+Service+Endpoint
 
 # License
 
