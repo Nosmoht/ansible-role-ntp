@@ -1,6 +1,5 @@
 ---
 - name: Ensure service
-  sudo: true
   service:
     name: '{{ ntp_service_name }}'
     state: '{{ ntp_service_state }}'
