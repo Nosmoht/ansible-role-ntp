@@ -1,4 +1,6 @@
 ---
+- include_vars: '{{ ansible_os_family }}.yml'
+
 - include: install.yml
   tags: ntp_install
 

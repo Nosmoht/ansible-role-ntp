@@ -1,7 +1,5 @@
 ---
-ntp_package_name: ntp
 ntp_package_state: installed
-ntp_service_name: ntpd
 ntp_service_state: running
 ntp_service_enabled: true
 ntp_config_file: /etc/ntp.conf
