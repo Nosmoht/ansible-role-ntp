@@ -1,6 +1,3 @@
 ---
 - name: Ensure package
-  sudo: true
-  yum:
-    name: '{{ ntp_package_name }}'
-    state: '{{ ntp_package_state }}'
+  action: '{{ ansible_pkg_mgr }} name={{ ntp_package_name }} state={{ ntp_package_state }}'
