@@ -1,3 +1,6 @@
 ---
 - name: Ensure package
-  action: '{{ ansible_pkg_mgr }} name={{ ntp_package_name }} state={{ ntp_package_state }}'
+  package:
+    name: '{{ ntp_package_name }}'
+    state: '{{ ntp_package_state }}'
+  become: true

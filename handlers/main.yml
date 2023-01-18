@@ -3,8 +3,10 @@
   service:
     name: '{{ ntp_service_name }}'
     state: restarted
+  become: true
 
 - name: Reload NTP
   service:
     name: '{{ ntp_service_name }}'
     state: reloaded
+  become: true

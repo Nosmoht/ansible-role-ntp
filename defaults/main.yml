@@ -1,6 +1,6 @@
 ---
-ntp_package_state: installed
-ntp_service_state: running
+ntp_package_state: present
+ntp_service_state: started
 ntp_service_enabled: true
 ntp_config_file: /etc/ntp.conf
 ntp_config_file_template: ntp.conf.j2

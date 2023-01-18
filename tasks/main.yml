@@ -9,11 +9,11 @@
   - ntp_config
   - ntp_service
 
-- include: install.yml
+- include_tasks: install.yml
   tags: ntp_install
 
-- include: config.yml
+- include_tasks: config.yml
   tags: ntp_config
 
-- include: service.yml
+- include_tasks: service.yml
   tags: ntp_service
